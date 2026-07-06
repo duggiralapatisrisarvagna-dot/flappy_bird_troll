@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flappy Bird Clone | By Sarvagna</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            overflow: hidden;
+            user-select: none;
+            overscroll-behavior: none; /* stops iOS bounce */
+            touch-action: none;
+        }
+
+        canvas {
+            display: block;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Order matters: sound.js must load before game.js -->
+    <script src="JS/bird.js"></script>
+    <script src="JS/pipe.js"></script>
+    <script src="JS/coin.js"></script>
+    <script src="JS/sound.js"></script>
+    <script src="JS/game.js"></script>
+
+</body>
+
+</html>
