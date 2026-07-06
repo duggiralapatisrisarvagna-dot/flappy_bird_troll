@@ -2,7 +2,7 @@ console.log("bird.js loaded");
 
 // Friend face image
 const faceImg = new Image();
-faceImg.src = "images/friend.png";
+faceImg.src = "friend.png";
 
 class Bird {
 
